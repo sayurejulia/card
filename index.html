@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartão Virtual</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .cartao {
+      background-color: #111;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      max-width: 400px;
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cartao:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+    }
+
+    .foto {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; /* Altere para 8px se quiser quadrada */
+      overflow: hidden;
+      margin: 0 auto 20px;
+      border: 3px solid #fff;
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info h1 {
+      font-size: 1.6em;
+      margin-bottom: 8px;
+    }
+
+    .info h2 {
+      font-size: 1em;
+      font-weight: 400;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .contato p {
+      font-size: 0.95em;
+      color: #ccc;
+      margin-bottom: 6px;
+    }
+
+    .botoes {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .botoes a {
+      background: #fff;
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .botoes a:hover {
+      background: #ffcc00;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      .cartao {
+        padding: 20px;
+      }
+      .foto {
+        width: 100px;
+        height: 100px;
+      }
+      .info h1 {
+        font-size: 1.4em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cartao">
+    <div class="foto">
+      <img src="c:\Users\sayur\OneDrive\Imagens\Imagens da Câmera\WIN_20251023_12_33_40_Pro.jpg">
+    </div>
+    <div class="info">
+      <h1>Sayure Julia Guilherme Costa</h1>
+      <h2>Tec. Informática</h2>
+    </div>
+    <div class="contato">
+      <p>📞 (11) 40228922</p>
+      <p>✉️ sayurejulia44@gmail.com</p>
+      <p>🌐 www.sitesayure.com</p>
+    </div>
+    <div class="botoes">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </div>
+
+</body>
+</html>

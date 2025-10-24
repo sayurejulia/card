@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient();
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    padding: 30px;
+    width: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+
+}
+
+input,select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+
+}
+
+input:focus, select:focus{
+    border-color: #4e73df;
+    box-shadow: 0 0 5px #4e73df;
+
+}
+
+.genero, .interesses{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+
+.cadastrar{
+    background-color: #1cc88a;
+    color: #fff;
+
+}
+
+.limpar{
+    background-color: #e74a3b;
+    color: #fff;
+
+}
+
+button:hover{
+    opacity: 0.85;
+
+}
+
+@media (max-widht:600px) {
+    .container{
+        width: 90%;
+    }
+}
+
+
+

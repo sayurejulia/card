@@ -1,0 +1,129 @@
+/* Paleta e tipografia */
+:root {
+    --cor-primaria: #003366;
+    --cor-segundaria: #00b4d8;
+    --cor-fundo: #f7f9fb;
+    --cor-texto: #222;
+    --cor-rodape: #001d3d;
+    --cor-hover: #0077b6;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--cor-fundo);
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+/* Cabeçalho */
+header{
+    background: var(--cor-primaria);
+    color: white;
+    padding: 1rem 0;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+}
+
+header nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+
+}
+
+header nav a:hover {
+    color: var(--cor-secundaria);
+    transition: 0.3s;
+
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right,#003366, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px fgba(0,0,0,0,1);
+    flex: 1 1 45%;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+}
+
+.card img {
+    display: inline-block;
+    background: var(--cor-secundaria);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 0.6rem;
+
+}
+
+.bnt:hover{
+    background: var(--cor-hover);
+
+}
+
+/* tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+}
+
+th, td {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+
+}
+
+tr:nth-child(even) {
+    background: #eef4f7;
+
+}
+
+th {
+    background: var(--cor-secundaria);
+    color: white;
+    
+}
+

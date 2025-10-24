@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-widht, initialscale=1.0">
+    <title>Cadastro - NextTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="formulario">
+
+            <h1>Cadastro de Usuário</h1>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email"
+        placeholder="exemplo@email.com" required>
+             
+            <label for="confirma">Senha</label>
+            <input type="password" id="senha" name="senha"
+        placeholder="Digite sua senha" required>
+
+            <label for="confirmar">Confirmar Senha</label>
+            <input type="password" id="confirmar" name="confirmar"
+        placeholder="Confirme sua senha" required>
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento" name="nascimento"
+        required>
+            
+             <p>Gênero:</p>
+             <div class="genero">
+
+                <label><input type="radio" name="genero"
+            value="masculino" required>Masculino</label>
+
+                <label><input type="radio" name="genero"
+            value="feminino">Feminino</label>
+
+                <label><input type="radio" name="gereno"
+            value="outro">outro</label>
+
+             </div>
+
+             <label for="cpf">CPF</label>
+
+             <input type="text" id="cpf" name="cpf"
+        placeholder="000.000.000-00" required>
+
+             <label for="telefone">Telefone</label>
+
+             <input type="tel" id="telefone" name="telefone"
+        placeholder="(00) 00000-0000" required>
+
+             <select id="estado" name= "estado" required>
+                <option value="">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                </select>
+                <p>Áreas de Interesse:</p>
+                <div class="interesses">
+                    <label><input type="checkbox" name="interesse" value="frontend">Front-end</label>
+                    <label><input type="checkbox" name="interesse" value="backend">Backend</label>
+                    <label><input type="checkbox" name="interesse" value="banco">Banco de Dados</label>
+                    <label><input type="checkbox" name="interesse" value="uxui">UX/UI</label>
+                </div>
+
+                <label for="foto">Foto de Perfil</label>
+
+                <input type="file" id="foto" name="foto"
+            accept=" .jpg,.png">
+
+                <label class="termos">
+                    <input type="checkbox" required> Aceito os Termos de 
+                Uso 
+
+                </label>
+
+                <div class="botoes">
+                    <button type="submit"
+            class="cadastrar">Cadastrar</button>
+
+                    <button type="reset" class="limpar">Limpar</button>
+                </div|>
+        </form>
+    </div>
+</body>
+</html>
